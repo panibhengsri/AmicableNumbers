@@ -5,31 +5,33 @@
 
             <form>
                 <label for="fnum">First Number:</label>
-                <input type="text" id="fnum" name="fnum"><br><br>
+                <input type="number" id="fnum" name="fnum"><br><br>
                 <label for="lnum">Last Number:</label>
-                <input type="text" id="lnum" name="lnum"><br><br>
-                <button name = "button" onClick = "AmicableNumbers(document.getElementById('fnum').value,document.getElementById('lnum').value)">Click ME</button>
+                <input type="number" id="lnum" name="lnum"><br><br>
+                <button name = "button" onClick = "AmicableNumbers()">Click</button>
             </form>
 
     <script>
 
-        function AmicableNumbers(num1,num2){
-            document.write("num1: " + num1);
-            document.write("num2: " + num2);
-            var one = getFactors(num1);
+        function AmicableNumbers(){
+            var first = document.getElementById('fnum').value;
+            var second = document.getElementById('lnum').value;
+            document.write("num1: " + first);
+            document.write("num2: " + second);
+            var one = getFactors(first);
             document.write("one: " + showArray(one));
             document.write("<br>");
             var oneSum = addArray(one);
             document.write("oneSum: " + oneSum);
             document.write("<br>");
-            var two = getFactors(num2);
+            var two = getFactors(second);
             document.write("two: " + showArray(two));
             document.write("<br>");
             var twoSum = addArray(two);
             document.write("twoSum: " + twoSum);
             document.write("<br>");
 
-            if (oneSum == num2 && twoSum == num1){
+            if (oneSum == second && twoSum == first){
                 document.write("Amicable");
             } else {
                 document.write("Not Amicable");
