@@ -6,18 +6,23 @@
 
         alert("Hello! I am an alert box!!");
         document.write("TESTING");
+        document.write("<br>");
 
         var a = isFactor(4,2);
 
         document.write("TESTING");
+        document.write("<br>");
 
         if (a === true){
             document.write("4 is a factor of 2");
+            document.write("<br>");
         } else {
             document.write(" 4 is NOT a factor of 2");
+            document.write("<br>");
         }
 
         document.write("TESTING");
+        document.write("<br>");
         
         function isFactor(num,factor){
             if (num%factor === 0){
@@ -28,6 +33,7 @@
         }
 
         document.write("TESTING");
+        document.write("<br>");
 
         function showArray(){
             var i;
@@ -37,6 +43,7 @@
         }
 
        var x = showArray(1,2,3,4,5,6,7,8,9);
+       document.write("<br>");
 
         function addArray(){
             var i;
@@ -48,6 +55,8 @@
         }
 
         var y = addArray(1,2,3,4,5,6,7,8,9);
+        document.write(y);
+        document.write("<br>");
 
         function getFactors(num){
             var arr = [];
