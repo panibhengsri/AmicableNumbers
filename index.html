@@ -2,9 +2,23 @@
 <!DOCTYPE html>
 <html>
     <body>
+
+        <form>
+            <label for="fnum">First Number:</label><br>
+            <input type="text" id="fnum" name="fnum"><br>
+            <label for="lnum">Last Number:</label><br>
+            <input type="text" id="lnum" name="lnum">
+        </form>
+
     <script>
 
         alert("Hello! I am an alert box!!");
+
+        <button onclick="">Click Me</button>
+
+        function AmicableNumbers(num1,num2){
+                //TO DO
+        }
 
         var a = isFactor(4,2); // should be true
         var b = isFactor(7,3); // should be false
@@ -34,10 +48,13 @@
         }
 
         function showArray(){
+            var arr = [];
             var i;
             for (i = 0; i < arguments.length; i++){
-                document.write(arguments[i]);
+                arr[i] = arguments[i];
+                //document.write(arguments[i]);
             }
+            return arr;
         }
 
        var x = showArray(1,2,3,4,5,6,7,8,9);
@@ -67,8 +84,9 @@
             return arr;
         }
 
+        document.write("testing showarray");
         var z = getFactors(13);
-        var zz = showArray(z);
+        document.write(showArray(z));
         document.write("<br>");
       
     </script>
