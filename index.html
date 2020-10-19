@@ -5,14 +5,14 @@
     <script>
 
         function isFactor(num,factor){
-            if (num%factor == 0){
+            if (num%factor === 0){
                 return true;
             } else {
                 return false;
             }
         }
 
-        if (isFactor(4,2)){
+        if (isFactor(4,2) === true){
             doucment.write(factor + "is a factor of " + num);
         } else {
             doucment.write(factor + "is NOT a factor of " + num);
