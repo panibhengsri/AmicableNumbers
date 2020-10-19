@@ -18,25 +18,22 @@
             var second = document.getElementById('lnum').value;
 
             var one = getFactors(first);
-            document.write("one: " + showArray(one));
-            document.write("<br>");
-
             var oneSum = addArray(one);
-            document.write("oneSum: " + oneSum);
-            document.write("<br>");
+            // document.write("oneSum: " + oneSum);
+            // document.write("<br>");
 
             var two = getFactors(second);
-            document.write("two: " + showArray(two));
-            document.write("<br>");
+            // document.write("two: " + showArray(two));
+            // document.write("<br>");
 
             var twoSum = addArray(two);
-            document.write("twoSum: " + twoSum);
-            document.write("<br>");
+            // document.write("twoSum: " + twoSum);
+            // document.write("<br>");
 
             if (oneSum == twoSum){
-                document.write("Amicable");
+                document.write(first + " and " + second + " are AMICABLE");
             } else {
-                document.write("Not Amicable");
+                document.write(first +  " and " + second + " and NOT AMICABLE");
             }
 
         }
@@ -84,13 +81,6 @@
             }
             return sum;
         }
-
-        // var arr = [1,2,3,4,5];
-        // var addarr = addArray(arr);
-        // var addarr1 = addArray(1,2,3,4,5);
-        // document.write("test: " + addarr);
-        // document.write("<br>");
-        // document.write("test1: " + addarr1);
 
         // var y = addArray(1,2,3,4,5,6,7,8,9);
         // document.write("sum of array: " + y);
