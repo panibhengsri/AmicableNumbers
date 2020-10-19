@@ -15,9 +15,13 @@
 
         function AmicableNumbers(num1,num2){
             var one = getFactors(num1);
+            document.write("one: " + one);
             var oneSum = addArray(one);
+            document.write("oneSum: " + oneSum);
             var two = getFactors(num2);
+            document.write("two: " + two);
             var twoSum = addArray(two);
+            document.write("twoSum: " + twoSum);
             if (oneSum == num2 && twoSum == num1){
                 document.write("Amicable");
             } else {
