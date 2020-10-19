@@ -2,21 +2,15 @@
 <!DOCTYPE html>
 <html>
     <body>
-
-
-
-    <script>
-
-        // <form>
-        //     <label for="fnum">First Number:</label><br>
-        //     <input type="text" id="fnum" name="fnum"><br>
-        //     <label for="lnum">Last Number:</label><br>
-        //     <input type="text" id="lnum" name="lnum">
-        // </form>
-
-        alert("Hello! I am an alert box!!");
+        <form>
+            <label for="fnum">First Number:</label><br>
+            <input type="text" id="fnum" name="fnum"><br>
+            <input type="text" id="lnum" name="lnum">
+        </form>
 
         <button onclick="AmicableNumbers(fnum,lnum)">Click Me</button>
+
+    <script>
 
         function AmicableNumbers(num1,num2){
             var one = getFactors(num1);
