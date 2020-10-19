@@ -3,13 +3,15 @@
 <html>
     <body>
 
-            <form>
-                <label for="fnum">First Number:</label>
-                <input type="number" id="fnum" name="fnum"><br><br>
-                <label for="lnum">Second Number:</label>
-                <input type="number" id="lnum" name="lnum"><br><br>
-                <button name = "button" onClick = "isAmicable()">Click</button>
-            </form>
+        <h3> Check if two numbers are amicable: </h3>
+
+        <form>
+            <label for="fnum">First Number:</label>
+            <input type="number" id="fnum" name="fnum"><br><br>
+            <label for="lnum">Second Number:</label>
+            <input type="number" id="lnum" name="lnum"><br><br>
+            <button name = "button" onClick = "isAmicable()">Click</button>
+        </form>
 
     <script>
 
@@ -37,25 +39,6 @@
             }
 
         }
-
-        // var a = isFactor(4,2); // should be true
-        // var b = isFactor(7,3); // should be false
-
-        // if (a === true){
-        //     document.write("2 is a factor of 4");
-        //     document.write("<br>");
-        // } else {
-        //     document.write("2 is NOT a factor of 4");
-        //     document.write("<br>");
-        // }
-
-        // if (b === true){
-        //     document.write("3 is a factor of 7");
-        //     document.write("<br>");
-        // } else {
-        //     document.write("3 is NOT a factor of 7");
-        //     document.write("<br>");
-        // }
         
         function isFactor(num,factor){
             if (num%factor === 0){
@@ -82,10 +65,6 @@
             return sum;
         }
 
-        // var y = addArray(1,2,3,4,5,6,7,8,9);
-        // document.write("sum of array: " + y);
-        // document.write("<br>");
-
         function getFactors(num){
             var arr = [];
             var i;
@@ -97,8 +76,33 @@
             return arr;
         }
 
+        // var a = isFactor(4,2); // should be true
+        // var b = isFactor(7,3); // should be false
+
+        // if (a === true){
+        //     document.write("2 is a factor of 4");
+        //     document.write("<br>");
+        // } else {
+        //     document.write("2 is NOT a factor of 4");
+        //     document.write("<br>");
+        // }
+
+        // if (b === true){
+        //     document.write("3 is a factor of 7");
+        //     document.write("<br>");
+        // } else {
+        //     document.write("3 is NOT a factor of 7");
+        //     document.write("<br>");
+        // }
+
+        // var arr = [1,2,3,4,5]
+        // var x = showArray(arr);
+        // document.write("show array: " + x + "<br>");
+        // var y = addArray(arr);
+        // document.write("sum of array: " + y + "<br>");
+
         // var z = getFactors(13);
-        // document.write(showArray(z));
+        // document.write(z);
         // document.write("<br>");
       
     </script>
