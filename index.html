@@ -3,7 +3,7 @@
 <html>
     <body>
 
-            <form action="/action_page.php" method="get">
+            <form>
                 <label for="fnum">First Number:</label>
                 <input type="number" id="fnum" name="fnum"><br><br>
                 <label for="lnum">Last Number:</label>
@@ -13,7 +13,7 @@
 
     <script>
 
-        document.getElementById("demo").addEventListener("click", AmicableNumbers);
+        document.getElementById("demo").addEventListener("click", AmicableNumbers(fnum, lnum));
 
         function AmicableNumbers(num1,num2){
             document.write("num1: " + num1);
