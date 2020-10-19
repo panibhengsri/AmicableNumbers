@@ -10,11 +10,11 @@
             <button onclick="AmicableNumbers(fnum,lnum)">Click</button>
         </form>
 
-        
-
     <script>
 
         function AmicableNumbers(num1,num2){
+            document.write("num1: " + num1);
+            document.write("num2: " + num2);
             var one = getFactors(num1);
             document.write("one: " + showArray(one));
             document.write("<br>");
