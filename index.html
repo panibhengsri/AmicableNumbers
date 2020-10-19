@@ -8,12 +8,12 @@
                 <input type="number" id="fnum" name="fnum"><br><br>
                 <label for="lnum">Last Number:</label>
                 <input type="number" id="lnum" name="lnum"><br><br>
-                <button name = "button" onClick = "AmicableNumbers()">Click</button>
+                <button name = "button" onClick = "isAmicable()">Click here</button>
             </form>
 
     <script>
 
-        function AmicableNumbers(){
+        function isAmicable(){
             var first = document.getElementById('fnum').value;
             var second = document.getElementById('lnum').value;
 
@@ -26,7 +26,7 @@
             document.write("one: " + showArray(one));
             document.write("<br>");
 
-            var oneSum = addArray(one);
+            var oneSum = addArray(showArray(one));
             document.write("oneSum: " + oneSum);
             document.write("<br>");
 
