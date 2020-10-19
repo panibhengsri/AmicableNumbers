@@ -9,12 +9,16 @@
 
         var a = isFactor(4,2);
 
+        document.write("TESTING");
+
         if (a === true){
             document.write(factor + "is a factor of " + num);
         } else {
             document.write(factor + "is NOT a factor of " + num);
         }
 
+        document.write("TESTING");
+        
         function isFactor(num,factor){
             if (num%factor === 0){
                 return true;
@@ -22,6 +26,8 @@
                 return false;
             }
         }
+
+        document.write("TESTING");
 
         function showArray(){
             var i;
