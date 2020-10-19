@@ -13,8 +13,6 @@
 
     <script>
 
-        document.getElementById("demo").addEventListener("click", AmicableNumbers(fnum, lnum));
-
         function AmicableNumbers(num1,num2){
             document.write("num1: " + num1);
             document.write("num2: " + num2);
@@ -32,9 +30,9 @@
             document.write("<br>");
 
             if (oneSum == num2 && twoSum == num1){
-                document.getElementById("demo").innerHRML = "Amicable"
+                document.write("Amicable");
             } else {
-                document.getElementById("demo").innerHRML = "Not Amicable"
+                document.write("Not Amicable");
             }
 
         }
