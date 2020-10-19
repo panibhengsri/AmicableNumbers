@@ -7,20 +7,20 @@
         alert("Hello! I am an alert box!!");
         document.write("TESTING");
 
+        var a = isFactor(4,2);
+
+        if (a === true){
+            document.write(factor + "is a factor of " + num);
+        } else {
+            document.write(factor + "is NOT a factor of " + num);
+        }
+
         function isFactor(num,factor){
             if (num%factor === 0){
                 return true;
             } else {
                 return false;
             }
-        }
-
-        var a = isFactor(4,2);
-
-        if (a === true){
-            doucment.write(factor + "is a factor of " + num);
-        } else {
-            doucment.write(factor + "is NOT a factor of " + num);
         }
 
         function showArray(){
