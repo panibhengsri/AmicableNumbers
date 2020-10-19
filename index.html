@@ -16,10 +16,18 @@
 
         alert("Hello! I am an alert box!!");
 
-        <button onclick="isFactor(fnum,lnum)">Click Me</button>
+        <button onclick="AmicableNumbers(fnum,lnum)">Click Me</button>
 
         function AmicableNumbers(num1,num2){
-                //TO DO
+            var one = getFactors(num1);
+            var oneSum = addArray(one);
+            var two = getFactors(num2);
+            var twoSum = addArray(two);
+            if (oneSum == num2 && twoSum == num1){
+                document.write("Amicable");
+            } else {
+                document.write("Not Amicable");
+            }
         }
 
         var a = isFactor(4,2); // should be true
@@ -54,7 +62,6 @@
             var i;
             for (i = 0; i < arguments.length; i++){
                 arr[i] = arguments[i];
-                //document.write(arguments[i]);
             }
             return arr;
         }
