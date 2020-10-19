@@ -2,13 +2,14 @@
 <!DOCTYPE html>
 <html>
     <body>
-        <form>
-            <label for="fnum">Number 1:</label><br>
-            <input type="text" id="fnum" name="fnum"><br>
-            <label for="lnum">Number 2:</label><br>
-            <input type="text" id="lnum" name="lnum">
-            <button onclick="AmicableNumbers(fnum,lnum)">Click</button>
-        </form>
+
+            <form action="/action_page.php" method="get">
+                <label for="fnum">First Number:</label>
+                <input type="text" id="fnum" name="fnum"><br><br>
+                <label for="lnum">Last Number:</label>
+                <input type="text" id="lnum" name="lnum"><br><br>
+                <button onclick="AmicableNumbers(document.getElementById(fnum),document.getElementById(lnum))">Click</button>
+            </form>
 
     <script>
 
