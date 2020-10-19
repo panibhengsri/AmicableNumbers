@@ -5,24 +5,25 @@
     <script>
 
         alert("Hello! I am an alert box!!");
-        document.write("TESTING");
-        document.write("<br>");
 
-        var a = isFactor(4,2);
-
-        document.write("TESTING");
-        document.write("<br>");
+        var a = isFactor(4,2); // should be true
+        var b = isFactor(7,3); // should be false
 
         if (a === true){
-            document.write("4 is a factor of 2");
+            document.write("2 is a factor of 4");
             document.write("<br>");
         } else {
-            document.write(" 4 is NOT a factor of 2");
+            document.write("2 is NOT a factor of 4");
             document.write("<br>");
         }
 
-        document.write("TESTING");
-        document.write("<br>");
+        if (b === true){
+            document.write("3 is a factor of 7");
+            document.write("<br>");
+        } else {
+            document.write("3 is NOT a factor of 7");
+            document.write("<br>");
+        }
         
         function isFactor(num,factor){
             if (num%factor === 0){
@@ -31,9 +32,6 @@
                 return false;
             }
         }
-
-        document.write("TESTING");
-        document.write("<br>");
 
         function showArray(){
             var i;
