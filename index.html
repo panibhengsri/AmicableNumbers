@@ -8,7 +8,7 @@
                 <input type="number" id="fnum" name="fnum"><br><br>
                 <label for="lnum">Last Number:</label>
                 <input type="number" id="lnum" name="lnum"><br><br>
-                <button onclick="AmicableNumbers(document.getElementById(fnum),document.getElementById(lnum))">Click</button>
+                <button id ="demo">Click ME</button>
             </form>
 
     <script>
@@ -29,13 +29,11 @@
             document.write("twoSum: " + twoSum);
             document.write("<br>");
 
-
             if (oneSum == num2 && twoSum == num1){
-                document.write("Amicable");
+                document.getElementById("demo").innerHRML = "Amicable"
             } else {
-                document.write("Not Amicable");
+                document.getElementById("demo").innerHRML = "Not Amicable"
             }
-
 
         }
 
