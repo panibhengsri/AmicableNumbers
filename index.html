@@ -8,7 +8,7 @@
                 <input type="number" id="fnum" name="fnum"><br><br>
                 <label for="lnum">Last Number:</label>
                 <input type="number" id="lnum" name="lnum"><br><br>
-                <button name = "button" onClick = "isAmicable()">Click here</button>
+                <button name = "button" onClick = "isAmicable()">Click</button>
             </form>
 
     <script>
@@ -90,6 +90,7 @@
             var sum = 0;
             for (i = 0; i < arguments.length; i++){
                 sum = sum + arguments[i];
+                document.write(sum + "<br>");
             }
             return sum;
         }
